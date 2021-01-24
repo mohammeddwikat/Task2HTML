@@ -1,6 +1,15 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.block--display-flex{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.btns{
+    justify-content: center;
+    border: none;
+}
 .btn{
     color: white;
     font-family: monospace;
@@ -9,39 +18,61 @@ body{
     margin: 1em;
     font-weight: bold;
 }
-.btn-dis{
+.btn--disaple{
     color: gray;
     border-radius: 8px;
     border: solid lightgray 1px;
 }
-.btn-large{
+.btn--large{
     width: 10em;
     height: 4em;
 }
-.btn-Med{
+.btn--meduim{
     width: 8em;
     height: 3em;
 }
-.btn-background{
+.btn--background{
     background: linear-gradient(90deg, rgb(37, 197, 197), navy) ;
     opacity: 0.8;
 }
-.btn-fontLarge{
-    font-size: 1.2vw;
-}
-.btn-fontMed{
-    font-size: 1em;
-}
-.btn-shadow{
+
+.btn--shadow{
     box-shadow: 0px 3px 6px 1px gray; 
 }
-.esc{
+
+.header{
+    display: flex;
+    margin: 1em;
+    margin-top: 0em;
+    margin-bottom: 2.5em;
+}
+.header__title{
+    margin-right: auto;
+    align-self: flex-end;
+    color: black;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.header__exit{
+    margin-left: auto;
+    color: lightgray;
+    cursor: pointer;
+    align-self: flex-start;
+}
+.header__esc{
     font-size: 0.22em;
     text-align: center;
     position: relative;
     top: -0.5em;
 }
-.Search{
+.members{
+    display: block;
+    width: 100%;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    box-sizing: border-box;
+}
+.members__search{
     margin: 1em;
     display: flex;
     padding-bottom: 0;
@@ -49,32 +80,38 @@ body{
     border-bottom-width: 1px;
     margin-bottom: 2em;
 }
-.Search > input{
+.members__search > input{
     width: 100%;
     border: none;
     padding-bottom: 0;
     margin-bottom: 0;
     order:2;
 }
+.members__search > i{
+    color:gray;
+    margin-right: 0.1em;
+    order:1;
+    transition: 0.5s ease-in;
+}
+.members__search > input[type=search]:focus{
+    outline: none !important;
+}
+.members__search > input[type=search]:focus + .fa-search{
+    color:rgb(28, 181, 28);
+    transition: 0.5s ease-out;
+}
 .member{
     margin: 1em;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
     border: solid gray 1px;
     flex-wrap: nowrap;
     border-radius: 3px;
     margin-bottom: 0.25em;
     margin-top: 0.25em;
 }
-.btns{
-    display: flex;
-    justify-content: center;
-    border: none;
-}
-.member > input, .member > label, .Search > input, .Search > i{
+.member__checkbox, .member__label, .search__input, .members__search > i{
     margin: 0.5em;
 }
+
 .member > label >i{
     margin-right: 0.6em;
 }
@@ -82,26 +119,10 @@ body{
     order:2;
     margin-left: auto;
     width: 100%;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 .member > label{
     order:1;
-}
-#AddMemebrsList{
-    display: block;
-    width: 100%;
-    padding-left: 7vw;
-    padding-right: 7vw;
-    box-sizing: border-box;
-}
-.Search > i{
-    color:gray;
-    margin-right: 0.1em;
-    order:1;
-    transition: 0.5s ease-in;
-}
-.member > label{
     color: gray;
     transition: 1s ease-out;
 }
@@ -141,39 +162,12 @@ body{
     bottom: 0.25px;
     right: 0.20px;
     z-index: 100;
-    
     font-weight: bold;
     text-align: center;
 }
-.member > input[type=checkbox]:checked + .label-check  {
+.member > input[type=checkbox]:checked + .member__label  {
     color: #333;
     font-weight: bold;
     transition: 1s ease-out;
 }
-.headerMembers{
-    display: flex;
-    margin: 1em;
-    margin-top: 0em;
-    margin-bottom: 2.5em;
-}
-.headerMembers > .titleMembers{
-    margin-right: auto;
-    align-self: flex-end;
-    color: black;
-    font-weight: bold;
-    font-size: 0.9em;
-}
-.headerMembers > .exit{
-    margin-left: auto;
-    color: lightgray;
-    cursor: pointer;
-    align-self: flex-start;
-}
-.Search > input[type=search]:focus{
-    outline: none !important;
-}
 
-.Search > input[type=search]:focus + .fa-search{
-    color:rgb(28, 181, 28);
-    transition: 0.5s ease-out;
-}
