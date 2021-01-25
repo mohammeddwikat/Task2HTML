@@ -1,57 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello world</title>
-        <link rel="stylesheet" href="tesk.css">
-        <script type="text/javascript" src="task.js"></script>
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <script src="https://use.fontawesome.com/b74a303e6b.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <meta charset="UTF-16">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header class="header animate__animated animate__backInRight">
-            <div class="header__title">Add members to Front-end development team</div>  
-            <div class="exit header__exit" onclick="closeMembers()" title="Close Modal"><span style="font-size: 2.25em;">×<div class="header__esc">ESC</div></div>
-        </header>
-        <div class="members animate__animated animate__backInLeft">
-            <form class="members__search" id="search">
-                <input class="search__input" type="search" placeholder="Find members">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </form>
-            <div class="member block--display-flex">
-                <input class="member__checkbox" name="select" id="checkboxMemberId" type="checkbox"> 
-                <label class="member__label" for="checkboxMemberId"><i class="fa fa-user" aria-hidden="true"></i> Carolien Bloeme</label>
-            </div>
-            <div class="member block--display-flex">
-                <input class="member__checkbox" name="select" id="checkboxMemberId" type="checkbox">
-                <label class="member__label" for="checkboxMemberId"><i class="fa fa-user" aria-hidden="true"></i> Sun Jun</label>
-            </div>
-            <div class="member block--display-flex">
-                <input class="member__checkbox" name="select" id="checkboxMemberId" type="checkbox">
-                <label class="member__label" for="checkboxMemberId"><i class="fa fa-user" aria-hidden="true"></i> Song Bao</label>
-            </div>
-            <div class="member block--display-flex">
-                <input class="member__checkbox" name="select" id="checkboxMemberId" type="checkbox">
-                <label class="member__label" for="checkboxMemberId"><i class="fa fa-user" aria-hidden="true"></i> Olivia Arribas</label>
-            </div>
-            <div class="member block--display-flex">
-                <input class="member__checkbox" name="select" id="checkboxMemberId" type="checkbox">
-                <label class="member__label" for="checkboxMemberId"><i class="fa fa-user" aria-hidden="true"></i> Banginkosi Mdiadlana</label>
-            </div>
-            <div class="member block--display-flex">
-                <input class="member__checkbox" name="select" id="checkboxMemberId" type="checkbox">
-                <label class="member__label" for="checkboxMemberId"><i class="fa fa-user" aria-hidden="true"></i> Arina Belomestnykh</label>
-            </div>
-            <div class="member block--display-flex">
-                <input class="member__checkbox" name="select" id="checkboxMemberId" type="checkbox">
-                <label class="member__label" for="checkboxMemberId"><i class="fa fa-user" aria-hidden="true"></i> Jacqueline Likoki</label>
-            </div>
-            <div class="btns block--display-flex">
-                <button class="btn btn--disaple btn--meduim" disabled>Cancel</button>
-                <button class="btn btn--meduim btn--background btn--shadow" onclick="dota()">Save</button>
-            </div>
-        </div>
-    </body>
+  <head>
+    <title>Hello world</title>
+    <link rel="stylesheet" href="tesk.css" />
+    <script type="text/javascript" src="task.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <script src="https://use.fontawesome.com/b74a303e6b.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header class="header animate__animated animate__backInRight">
+      <div class="header__title">Add members to Front-end development team</div>
+      <div class="header__exit" onclick="closeMembers()" title="Close Modal">
+        <span style="font-size: 2.25em">×</span>
+        <div class="header__esc">ESC</div>
+      </div>
+    </header>
+    <div class="members animate__animated animate__backInLeft">
+      <form class="members__search" id="search">
+        <input class="search__input" type="search" placeholder="Find members" />
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </form>
+      <div class="member block--display-flex">
+        <input
+          class="member__checkbox"
+          name="select"
+          id="checkboxMemberId"
+          type="checkbox"
+        />
+        <label class="member__label" for="checkboxMemberId"
+          ><i class="fa fa-user" aria-hidden="true"></i> Carolien Bloeme</label
+        >
+      </div>
+      <div class="member block--display-flex">
+        <input
+          class="member__checkbox"
+          name="select"
+          id="checkboxMemberId"
+          type="checkbox"
+        />
+        <label class="member__label" for="checkboxMemberId"
+          ><i class="fa fa-user" aria-hidden="true"></i> Sun Jun</label
+        >
+      </div>
+      <div class="member block--display-flex">
+        <input
+          class="member__checkbox"
+          name="select"
+          id="checkboxMemberId"
+          type="checkbox"
+        />
+        <label class="member__label" for="checkboxMemberId"
+          ><i class="fa fa-user" aria-hidden="true"></i> Song Bao</label
+        >
+      </div>
+      <div class="member block--display-flex">
+        <input
+          class="member__checkbox"
+          name="select"
+          id="checkboxMemberId"
+          type="checkbox"
+        />
+        <label class="member__label" for="checkboxMemberId"
+          ><i class="fa fa-user" aria-hidden="true"></i> Olivia Arribas</label
+        >
+      </div>
+      <div class="member block--display-flex">
+        <input
+          class="member__checkbox"
+          name="select"
+          id="checkboxMemberId"
+          type="checkbox"
+        />
+        <label class="member__label" for="checkboxMemberId"
+          ><i class="fa fa-user" aria-hidden="true"></i> Banginkosi
+          Mdiadlana</label
+        >
+      </div>
+      <div class="member block--display-flex">
+        <input
+          class="member__checkbox"
+          name="select"
+          id="checkboxMemberId"
+          type="checkbox"
+        />
+        <label class="member__label" for="checkboxMemberId"
+          ><i class="fa fa-user" aria-hidden="true"></i> Arina
+          Belomestnykh</label
+        >
+      </div>
+      <div class="member block--display-flex">
+        <input
+          class="member__checkbox"
+          name="select"
+          id="checkboxMemberId"
+          type="checkbox"
+        />
+        <label class="member__label" for="checkboxMemberId"
+          ><i class="fa fa-user" aria-hidden="true"></i> Jacqueline
+          Likoki</label
+        >
+      </div>
+      <div class="btns block--display-flex">
+        <button class="btn btn--disaple btn--size-meduim" disabled>
+          Cancel
+        </button>
+        <button
+          class="btn btn--size-meduim btn--background-gradientblue btn--shadow-yes"
+          onclick="dota()"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

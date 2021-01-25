@@ -23,23 +23,21 @@ body{
     border-radius: 8px;
     border: solid lightgray 1px;
 }
-.btn--large{
+.btn--size-large{
     width: 10em;
     height: 4em;
 }
-.btn--meduim{
+.btn--size-meduim{
     width: 8em;
     height: 3em;
 }
-.btn--background{
+.btn--background-gradientblue{
     background: linear-gradient(90deg, rgb(37, 197, 197), navy) ;
     opacity: 0.8;
 }
-
-.btn--shadow{
+.btn--shadow-yes{
     box-shadow: 0px 3px 6px 1px gray; 
 }
-
 .header{
     display: flex;
     margin: 1em;
